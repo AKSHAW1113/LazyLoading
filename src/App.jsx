@@ -9,7 +9,6 @@ const [load, setLoad] = useState(false)
       <h1>Lazy loading</h1>
       <button onClick={() => setLoad(true)}>Load user</button>
       {load ? <Suspense fallback={<h3>loding...</h3>}><User /></Suspense> : null}
-
     </div>
   )
 }
